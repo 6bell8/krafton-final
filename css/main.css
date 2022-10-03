@@ -1,0 +1,604 @@
+.moreArrow {
+  display: block;
+  margin-top: 40px;
+  width: 30px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-image: url(../images/main/ico-more-arrow.png);
+  background-size: 30px 10px;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+
+body {
+  background-color: #fff;
+}
+body.blackBg {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+body.blackBg #button .up {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 10px;
+}
+body.blackBg #button .up:hover {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+}
+body.blackBg #careers .content {
+  color: #fff;
+}
+body.blackBg #studios .moreArrow {
+  background-image: url("../images/main/ico-main-slide-right-w.png");
+}
+body.blackBg #studios .list li:nth-child(1) .logo {
+  background-image: url("../images/main/logo-pubg-w.png");
+}
+body.blackBg #studios .list li:nth-child(1) .txtBox {
+  border-color: #fff;
+}
+body.blackBg #studios .list li:nth-child(1) a:hover {
+  background-color: #fff;
+  color: #000;
+}
+body.blackBg #studios .list li:nth-child(1) a:hover .logo {
+  background-image: url("../images/main/logo-pubg.png");
+}
+body.blackBg #studios .list li:nth-child(1) a:hover .txtBox {
+  border-color: #000;
+}
+body.blackBg #studios .list li:nth-child(2) .logo {
+  background-image: url("../images/main/logo-bluehole-w.png");
+}
+body.blackBg #studios .list li:nth-child(2) .txtBox {
+  border-color: #fff;
+}
+body.blackBg #studios .list li:nth-child(2) a:hover {
+  background-color: #fff;
+  color: #000;
+}
+body.blackBg #studios .list li:nth-child(2) a:hover .logo {
+  background-image: url("../images/main/logo-bluehole.png");
+}
+body.blackBg #studios .list li:nth-child(2) a:hover .txtBox {
+  border-color: #000;
+}
+body.blackBg #studios .list li:nth-child(3) .logo {
+  background-image: url("../images/main/logo-rising-w.png");
+}
+body.blackBg #studios .list li:nth-child(3) .txtBox {
+  border-color: #fff;
+}
+body.blackBg #studios .list li:nth-child(3) a:hover {
+  background-color: #fff;
+  color: #000;
+}
+body.blackBg #studios .list li:nth-child(3) a:hover .logo {
+  background-image: url("../images/main/logo-rising.png");
+}
+body.blackBg #studios .list li:nth-child(3) a:hover .txtBox {
+  border-color: #000;
+}
+body.blackBg #studios .list li:nth-child(4) .logo {
+  background-image: url("../images/main/logo-striking-w.png");
+}
+body.blackBg #studios .list li:nth-child(4) .txtBox {
+  border-color: #fff;
+}
+body.blackBg #studios .list li:nth-child(4) a:hover {
+  background-color: #fff;
+  color: #000;
+}
+body.blackBg #studios .list li:nth-child(4) a:hover .logo {
+  background-image: url("../images/main/logo-striking.png");
+}
+body.blackBg #studios .list li:nth-child(4) a:hover .txtBox {
+  border-color: #000;
+}
+
+.section {
+  max-width: 1280px;
+  margin: 0 auto 80px;
+  padding: 50px 40px 0;
+}
+.section .titleBox {
+  margin-bottom: 50px;
+}
+.section .titleBox h2 {
+  font-weight: 700;
+  font-size: 3vw;
+  line-height: 1.25;
+}
+.section .container {
+  position: relative;
+}
+
+#button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  opacity: 0;
+}
+#button.btnScroll {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+#button.btnScroll .material-icons {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+}
+#button.btnScroll .up {
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 10px;
+}
+#button.btnScroll .up:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+#mainVisual {
+  overflow: hidden;
+}
+#mainVisual .container {
+  height: 100vh;
+  padding: 0 4vw;
+  margin: 0 auto;
+  position: relative;
+  min-height: 43vw;
+}
+#mainVisual .container .mainBox {
+  position: absolute;
+  left: 4vw;
+  right: 4vw;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30vw;
+  overflow: hidden;
+}
+#mainVisual .container .mainScroll {
+  position: absolute;
+  z-index: 10;
+  bottom: 1vw;
+  right: 4vw;
+}
+#mainVisual .container .mainScroll .scroll {
+  display: block;
+  font-size: 0.5vw;
+  text-transform: uppercase;
+  bottom: 1vw;
+  right: 100%;
+  transform: rotate(90deg);
+  position: absolute;
+}
+#mainVisual .container .mainScroll .arrow {
+  display: block;
+  width: 1.3vw;
+  height: 4.6vw;
+  background: no-repeat;
+  background-image: url("../images/main/ico-scroll-arrow.png");
+  background-size: 1.3vw 3.6vw;
+  animation: scrollAnimation 1.5s ease-in-out 0s infinite;
+}
+#mainVisual .mainBoxBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#mainVisual .mainBoxBg .mainBoxBgSecond {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#mainVisual .mainBoxBg .mainBoxBgSecond .videoItem {
+  position: absolute;
+  clip: rect(0, auto, auto, 0);
+}
+#mainVisual .mainBoxBg .mainBoxBgSecond .videoItem:nth-child(1) {
+  width: 100%;
+  height: 45%;
+  top: 2%;
+  left: 0.6%;
+}
+#mainVisual .mainBoxBg .mainBoxBgSecond .videoItem:nth-child(2) {
+  width: 100%;
+  height: 45%;
+  bottom: 2%;
+  right: 0.6%;
+}
+#mainVisual .mainBoxBg .mainBoxBgSecond .videoItem video {
+  position: absolute;
+  bottom: -9%;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  object-fit: cover;
+}
+#mainVisual .mainBoxBg .mainBoxBgSecond .ImageItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+#mainVisual .mainBoxTxt {
+  position: absolute;
+  letter-spacing: -2px;
+  z-index: 10;
+  height: 95%;
+  top: -0.29%;
+  left: 0.6%;
+  width: 100%;
+  font-weight: 700;
+}
+#mainVisual .mainBoxTxt .mainBoxTxtItem {
+  display: block;
+  position: absolute;
+  font-size: 6.5vw;
+}
+#mainVisual .mainBoxTxt .mainBoxTxtItem:nth-child(1) {
+  left: 0;
+  top: 5px;
+}
+#mainVisual .mainBoxTxt .mainBoxTxtItem:nth-child(2) {
+  right: 16px;
+  top: 5px;
+}
+#mainVisual .mainBoxTxt .mainBoxTxtItem:nth-child(3) {
+  right: 16px;
+  top: 28%;
+}
+#mainVisual .mainBoxTxt .mainBoxTxtItem:nth-child(4) {
+  left: 0;
+  bottom: 21%;
+}
+#mainVisual .mainBoxTxt .mainBoxTxtItem:nth-child(5) {
+  left: 36%;
+  bottom: -6%;
+}
+#mainVisual .mainBoxTxt .mainBoxTxtItem:nth-child(6) {
+  font-size: 0.8vw;
+  font-weight: 300;
+  right: 16px;
+  bottom: -5%;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+#news .list {
+  display: flex;
+  justify-content: space-between;
+}
+#news .list li {
+  flex-basis: 31.5%;
+}
+#news .list li:hover a .imgBox img {
+  transform: scale(1.1);
+}
+#news .list li a .imgBox {
+  overflow: hidden;
+  position: relative;
+}
+#news .list li a .imgBox img {
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+}
+#news .list li a .desc {
+  margin-top: 40px;
+  font-weight: 500;
+  word-break: keep-all;
+}
+#news .list li a .desc .txt {
+  font-size: 1.3vw;
+  line-height: 1.25;
+  width: fit-content;
+  background-image: linear-gradient(#000, #000);
+  background-position: left bottom;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition-property: background-size;
+  transition-duration: 0.3s;
+}
+#news .list li a .desc .date {
+  color: #ccc;
+  margin-top: 25px;
+  font-size: 15px;
+}
+#news .list li a:hover .txt {
+  background-size: 100% 2px;
+}
+
+#careers .list {
+  display: flex;
+  justify-content: space-between;
+}
+#careers .list li {
+  flex-basis: 48%;
+}
+#careers .list li:hover a .imgBox img {
+  transform: scale(1.1);
+}
+#careers .list li:hover a .desc .moreArrow {
+  transform: translateX(5px);
+}
+#careers .list li a .imgBox {
+  overflow: hidden;
+  position: relative;
+}
+#careers .list li a .imgBox img {
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+}
+#careers .list li a .desc {
+  margin-top: 40px;
+  word-break: keep-all;
+}
+#careers .list li a .desc .subtitle {
+  font-weight: 700;
+  font-size: 1.3vw;
+  width: fit-content;
+  background-image: linear-gradient(#000, #000);
+  background-position: left bottom;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition-property: background-size;
+  transition-duration: 0.3s;
+}
+#careers .list li a .desc .content {
+  margin-top: 25px;
+  font-size: 15px;
+}
+#careers .list li a:hover .subtitle {
+  background-size: 100% 2px;
+}
+
+#kraftonGames {
+  position: relative;
+}
+#kraftonGames .swiper-container {
+  overflow: hidden;
+}
+#kraftonGames .titleBox {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+#kraftonGames .titleBox .slideArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#kraftonGames .titleBox .slideArrow .prev {
+  width: 50px;
+  height: 18px;
+  background: none;
+  background-image: url("../images/main/ico-main-slide-left.png");
+  background-size: 50px 18px;
+  display: block;
+  margin-right: 20px;
+  z-index: 3;
+}
+#kraftonGames .titleBox .slideArrow .next {
+  width: 50px;
+  height: 18px;
+  background: none;
+  background-image: url("../images/main/ico-main-slide-right.png");
+  background-size: 50px 18px;
+  display: block;
+  margin-right: 20px;
+  z-index: 3;
+}
+#kraftonGames .swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+#kraftonGames .swiper-wrapper li {
+  margin-right: 30px;
+}
+#kraftonGames .swiper-wrapper li:hover a .gameThumbnail img {
+  transform: scale(1.1);
+}
+#kraftonGames .swiper-wrapper li a {
+  display: block;
+  position: relative;
+}
+#kraftonGames .swiper-wrapper li a .gameThumbnail {
+  overflow: hidden;
+  position: relative;
+}
+#kraftonGames .swiper-wrapper li a .gameThumbnail:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+#kraftonGames .swiper-wrapper li a .gameThumbnail img {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+#kraftonGames .swiper-wrapper li a .gameThumbnail .stickerBox:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #000;
+  transform: skewX(20deg);
+  width: 22%;
+  height: 30px;
+  top: 20px;
+  left: -30px;
+  z-index: 2;
+}
+#kraftonGames .swiper-wrapper li a .gameThumbnail .stickerBox .sticker {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  z-index: 2;
+}
+#kraftonGames .swiper-wrapper li a .gameThumbnailTitle {
+  font-size: 29px;
+  line-height: 1.2em;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  z-index: 2;
+}
+
+#studios {
+  position: relative;
+}
+#studios .titleBox {
+  display: flex;
+  justify-content: space-between;
+}
+#studios .titleBox a:hover .moreArrow {
+  transform: translateX(5px);
+}
+#studios .list {
+  display: flex;
+  height: 100%;
+}
+#studios .list li {
+  flex-basis: 25%;
+}
+#studios .list li:nth-child(1) .logo {
+  background-image: url("../images/main/logo-pubg.png");
+  width: 83px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 83px 60px;
+  margin-bottom: 60px;
+}
+#studios .list li:nth-child(1) a:hover {
+  background-color: #f2a900;
+  color: #fff;
+}
+#studios .list li:nth-child(1) a:hover .logo {
+  background-image: url("../images/main/logo-pubg-w.png");
+}
+#studios .list li:nth-child(1) a:hover .txtBox {
+  border-color: #fff;
+}
+#studios .list li:nth-child(2) .logo {
+  background-image: url("../images/main/logo-bluehole.png");
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  margin-bottom: 60px;
+}
+#studios .list li:nth-child(2) a:hover {
+  background-color: #1e82ff;
+  color: #fff;
+}
+#studios .list li:nth-child(2) a:hover .logo {
+  background-image: url("../images/main/logo-bluehole-w.png");
+}
+#studios .list li:nth-child(2) a:hover .txtBox {
+  border-color: #fff;
+}
+#studios .list li:nth-child(3) .logo {
+  background-image: url("../images/main/logo-rising.png");
+  width: 78px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 78px 60px;
+  margin-bottom: 60px;
+}
+#studios .list li:nth-child(3) a:hover {
+  background-color: #ff5c39;
+  color: #fff;
+}
+#studios .list li:nth-child(3) a:hover .logo {
+  background-image: url("../images/main/logo-rising-w.png");
+}
+#studios .list li:nth-child(3) a:hover .txtBox {
+  border-color: #fff;
+}
+#studios .list li:nth-child(4) .logo {
+  background-image: url("../images/main/logo-striking.png");
+  width: 180px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: 180px 60px;
+  margin-bottom: 60px;
+}
+#studios .list li:nth-child(4) a:hover {
+  background-color: #3dcfa8;
+  color: #fff;
+}
+#studios .list li:nth-child(4) a:hover .logo {
+  background-image: url("../images/main/logo-striking-w.png");
+}
+#studios .list li:nth-child(4) a:hover .txtBox {
+  border-color: #fff;
+}
+#studios .list li a {
+  display: block;
+  padding: 50px 40px 35px;
+  min-height: 300px;
+  position: relative;
+}
+#studios .list .logo {
+  display: block;
+  position: relative;
+}
+#studios .list .txtBox {
+  margin-top: 20px;
+  padding-top: 30px;
+  border-top: 1px solid #000;
+}
+#studios .list .txtBox h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+#studios .list .txtBox p {
+  font-size: 14px;
+  line-height: 1.4em;
+  word-break: keep-all;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}

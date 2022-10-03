@@ -1,0 +1,280 @@
+body {
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  min-height: 2000px;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subContents {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#subVisual02 .titleBox {
+  margin: 150px auto 60px;
+}
+#subVisual02 .titleBox ul {
+  display: flex;
+  margin-bottom: 30px;
+}
+#subVisual02 .titleBox ul li {
+  position: relative;
+  margin: 0 10px;
+}
+#subVisual02 .titleBox ul li:nth-child(1) {
+  margin-right: 50px;
+}
+#subVisual02 .titleBox ul li:nth-child(1):after {
+  display: block;
+  width: 1px;
+  height: 13px;
+  left: 125px;
+  content: "";
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#subVisual02 .titleBox h2 {
+  margin-bottom: 30px;
+  font-size: 85px;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+#subVisual02 .titleBox p {
+  margin-bottom: 80px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.subImg {
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/contents/blueholestudio/pubg-bg1-min.png");
+}
+
+#pubgstudio01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+  position: relative;
+}
+#pubgstudio01 .yellowBox {
+  z-index: 99;
+  width: 450px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -100px;
+  right: 100px;
+  background-color: rgb(14, 155, 250);
+}
+#pubgstudio01 .yellowBox img {
+  width: 30%;
+}
+#pubgstudio01 .contentsBox h2 {
+  word-break: keep-all;
+  width: 600px;
+  flex-basis: 1;
+  font-family: sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  line-height: 1.2em;
+}
+#pubgstudio01 .contentsBox p {
+  word-break: keep-all;
+  width: 600px;
+  flex-basis: 1;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.8em;
+  margin-bottom: 20px;
+}
+#pubgstudio01 .left {
+  padding-bottom: 300px;
+}
+#pubgstudio01 .right {
+  padding-top: 300px;
+}
+
+.middleImg01 {
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+.middleImg01 img {
+  width: 100%;
+}
+
+#pubgstudio02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0 200px;
+}
+#pubgstudio02 .contentsBox h2 {
+  width: 600px;
+  flex-basis: 1;
+  font-family: sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  line-height: 1.2em;
+}
+#pubgstudio02 .contentsBox p {
+  width: 600px;
+  flex-basis: 1;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+#pubgstudio02 .left {
+  padding-bottom: 250px;
+}
+#pubgstudio02 .right {
+  padding-top: 250px;
+}
+
+.middleImg02 {
+  margin: 0 auto;
+  transform: scale(1.5);
+}
+.middleImg02 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+#pubgstudio03 {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+#pubgstudio03 .descBox h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#pubgstudio03 .descBox p {
+  font-size: 17px;
+  line-height: 1.8em;
+  margin-bottom: 50px;
+}
+
+#pubgstudio04 {
+  margin-bottom: 200px;
+}
+#pubgstudio04 h2 {
+  font-size: 46px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+}
+#pubgstudio04 .list {
+  display: flex;
+  justify-content: space-between;
+}
+#pubgstudio04 .list .desc {
+  flex-basis: 48%;
+  word-break: keep-all;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #333;
+}
+#pubgstudio04 .list .desc:hover img {
+  transform: scale(1.1);
+  transition: all 0.25s ease-in-out;
+}
+#pubgstudio04 .list .desc:hover .contentArrow {
+  transform: translateX(5px);
+  transition: all 0.25s ease-in-out;
+}
+#pubgstudio04 .list .desc .imgBox {
+  overflow: hidden;
+}
+#pubgstudio04 .list .desc .imgBox img {
+  width: 100%;
+}
+#pubgstudio04 .list .desc h3 {
+  font-size: 38px;
+  font-weight: 500;
+  font-weight: 500;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  width: fit-content;
+  background-image: linear-gradient(#000, #000);
+  background-position: left bottom;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition-property: background-size;
+  transition-duration: 0.3s;
+}
+#pubgstudio04 .list .desc h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 2px;
+  padding-bottom: 25px;
+}
+#pubgstudio04 .list .desc p {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+#pubgstudio04 .list .desc .contentArrow {
+  display: block;
+  margin-top: 40px;
+  width: 30px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-image: url("../images/main/ico-more-arrow.png");
+  background-size: 30px 10px;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+#pubgstudio04 .list .desc:hover h3 {
+  background-size: 100% 2px;
+}
+#pubgstudio04 .list li {
+  margin-top: 40px;
+  word-break: keep-all;
+}
+#pubgstudio04 .list li .itemList {
+  display: flex;
+  text-align: center;
+  width: 300px;
+}
+#pubgstudio04 .list li .itemList li {
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  margin-right: 50px;
+  flex-basis: 25%;
+}
+#pubgstudio04 .list li .itemList li:nth-child(1)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 17px;
+  background-color: #999;
+  position: absolute;
+  top: 0;
+  right: -25px;
+}

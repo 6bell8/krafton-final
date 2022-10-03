@@ -1,0 +1,1 @@
+#topBtn{display:flex;justify-content:center;align-items:center;width:70px;height:70px;position:fixed;right:20px;bottom:20px;opacity:0;transition:all .3s ease-in-out;pointer-events:none;background-color:#fff}#topBtn img{width:25%;filter:brightness(0)}#topBtn.on{opacity:1;pointer-events:all}

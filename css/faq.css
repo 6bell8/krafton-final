@@ -1,0 +1,314 @@
+body {
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  min-height: 1800px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subContents {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.arrow {
+  width: 40px;
+  filter: brightness(0);
+}
+
+#subVisual04 .titleBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px auto 60px;
+  max-width: 1280px;
+}
+#subVisual04 .titleBox .subTitle {
+  font-family: sans-serif;
+  font-size: 65px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  word-spacing: -5px;
+}
+#subVisual04 .titleBox .breadCrumbBox {
+  font-size: 13px;
+}
+#subVisual04 .titleBox .breadCrumbBox .breadCrumb {
+  display: flex;
+  align-items: center;
+}
+#subVisual04 .titleBox .breadCrumbBox .breadCrumb li:last-child {
+  font-weight: 700;
+}
+#subVisual04 .titleBox .breadCrumbBox .breadCrumb li:not(:last-child):after {
+  transform: translateY(3px);
+  display: inline-block;
+  margin: 0 10px;
+  font-family: "Material Icons";
+  content: "\e409";
+}
+
+#faq .menu {
+  margin: 30px 0 70px;
+  border-bottom: 1px solid #eee;
+}
+#faq .menu ul {
+  display: flex;
+}
+#faq .menu ul li {
+  position: relative;
+  overflow: hidden;
+  margin-right: 50px;
+  padding: 20px 10px;
+  font-weight: 500;
+}
+#faq .menu ul li:not(:first-child) {
+  color: #999;
+}
+#faq .menu ul li:first-child:after {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: #000;
+}
+#faq .menu ul li:not(:first-child):after {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate3d(-100%, 0, 0);
+  opacity: 0;
+  transition: transform 200ms;
+  content: "";
+  background-color: #000;
+}
+#faq .menu ul li:hover:after {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+#faq .searchForm {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+#faq .searchForm .category {
+  position: relative;
+  overflow: hidden;
+}
+#faq .searchForm .category.open {
+  overflow: visible;
+}
+#faq .searchForm .category.open div:after {
+  transform: rotate(-180deg);
+}
+#faq .searchForm .category.open .categoryList {
+  display: block;
+  top: 60px;
+}
+#faq .searchForm .category div {
+  width: 100px;
+  height: 100%;
+  position: relative;
+  margin-right: 15px;
+  padding: 16px 18px;
+  font-size: 16px;
+  border: 2px solid #000;
+}
+#faq .searchForm .category div:after {
+  transition: all 0.2s ease;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 20px;
+  margin-left: 10px;
+  background-image: url("../images/common/ico-select-arrow_b.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  content: "";
+}
+#faq .searchForm .category .categoryList {
+  width: 100px;
+  position: absolute;
+  padding: 6px 18px;
+  font-size: 16px;
+  border: 2px solid #000;
+  background-color: #fff;
+  transition: all 0.25s ease;
+}
+#faq .searchForm .category .categoryList li {
+  padding: 10px 0;
+}
+#faq .searchForm .searchBox {
+  width: 250px;
+  position: relative;
+  padding: 12px 18px;
+  border: 2px solid #000;
+}
+#faq .searchForm .searchBox:after {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  margin-left: 10px;
+  background-image: url("../images/common/ico-search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  content: "";
+}
+#faq .searchForm .searchBox input {
+  border: none;
+  outline: none;
+}
+#faq .searchForm .searchBox input[type=text] {
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+#faq .faqList {
+  border-top: 2px solid #000;
+}
+#faq .faqList ul li {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+}
+#faq .faqList ul li span {
+  display: inline-block;
+  padding: 0.2em 0;
+  position: relative;
+  overflow: hidden;
+}
+#faq .faqList ul li span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: transform 300ms;
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+#faq .faqList ul li span:hover:after {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+#faq .faqList ul li:before {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  background-image: url("../images/common/ico-question.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  content: "";
+}
+#faq .inquiry {
+  width: 100%;
+  padding: 40px;
+  margin-bottom: 150px;
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  background-color: rgba(247, 247, 247, 0.719);
+}
+#faq .inquiry dl {
+  display: flex;
+  align-items: center;
+}
+#faq .inquiry dt {
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 75px 0;
+  font-size: 18px;
+}
+.pagination .icon {
+  display: flex;
+  justify-content: center;
+}
+.pagination .icon a {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+}
+.pagination .icon a.first:before {
+  padding: 8px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin-left: 0;
+  font-family: "Material Icons";
+  content: "keyboard_double_arrow_left";
+}
+.pagination .icon a.prev:before {
+  padding: 8px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin-left: 0;
+  font-family: "Material Icons";
+  content: "chevron_left";
+}
+.pagination .icon a.next:before {
+  padding: 8px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin-left: 0;
+  font-family: "Material Icons";
+  content: "chevron_right";
+}
+.pagination .icon a.last:before {
+  padding: 8px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  margin-left: 0;
+  font-family: "Material Icons";
+  content: "keyboard_double_arrow_right";
+}
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 50px;
+  font-family: "Noto sans kr";
+  font-size: 16px;
+}
+.pagination ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 40px;
+  margin: 0 15px;
+  color: #777;
+}
+.pagination ul a.active {
+  font-weight: 600;
+  color: #000;
+  border-bottom: 2px solid #000;
+}

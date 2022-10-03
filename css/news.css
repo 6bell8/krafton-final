@@ -1,0 +1,453 @@
+body {
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subContents {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.subContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.arrow {
+  width: 40px;
+  filter: brightness(0);
+}
+
+#subVisual01 {
+  padding-top: 150px;
+}
+
+#subVisual01 .titleBox {
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#subVisual01 .titleBox .subTitle {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+#subVisual01 .titleBox .breadCrumbBox {
+  font-size: 13px;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb {
+  display: flex;
+  align-items: center;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:last-child {
+  font-weight: 700;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:not(:last-child):after {
+  transform: translateY(3px);
+  display: inline-block;
+  margin: 0 10px;
+  font-family: "Material Icons";
+  content: "\e409";
+}
+
+.category {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.category .categorySelect {
+  width: 100%;
+  position: relative;
+}
+
+.category .categorySelect .selectLink {
+  height: 50px;
+  line-height: 25px;
+  display: block;
+  width: 240px;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid #000;
+  padding: 10px 30px 10px 10px;
+  box-sizing: border-box;
+}
+
+.category .categorySelect .selectLink:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-image: url("../images/common/ico-select-arrow_b.png");
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+
+.category .categorySelect ul {
+  display: none;
+  border: 2px solid #000;
+  background-color: #fff;
+  width: 240px;
+  padding: 10px 30px 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 5;
+  box-sizing: border-box;
+  top: calc(100% + 10px);
+}
+
+.category .categorySelect ul::-webkit-scrollbar {
+  width: 2px;
+}
+
+.category .categorySelect ul::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border: 2px solid transparent;
+}
+
+.category .categorySelect ul li {
+  padding: 10px;
+}
+
+.categorySearch {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.categorySearch .searchBox {
+  position: relative;
+  width: 200px;
+}
+
+.categorySearch .searchBox .searchLink {
+  line-height: 25px;
+  display: block;
+  width: 150px;
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  padding: 10px 30px 10px 10px;
+}
+
+.categorySearch .searchBox .searchLink:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-image: url("../images/common/ico-select-arrow_b.png");
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.categorySearch .searchBox ul {
+  display: none;
+  border: 2px solid #000;
+  background-color: #fff;
+  width: 150px;
+  padding: 10px 30px 10px 0;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  max-height: 150px;
+  z-index: 5;
+  box-sizing: border-box;
+  top: calc(100% + 10px);
+}
+
+.categorySearch .searchBox ul li {
+  padding: 10px;
+}
+
+.categorySearch .searchInput {
+  position: relative;
+}
+
+.categorySearch .searchInput .searchItem {
+  display: flex;
+}
+
+.categorySearch .searchInput .searchItem input {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  width: 200px;
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+  border: 2px solid #000;
+  padding: 10px 30px 10px 10px;
+}
+
+.categorySearch .searchInput img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.newsPost {
+  width: 100%;
+  position: relative;
+}
+
+.newsPost .postList {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsPost .postList li {
+  margin-bottom: 20px;
+}
+
+.newsPost .postList li a {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.newsPost .postList li a .newsContent {
+  width: 55%;
+  padding: 40px 100px 40px 0px;
+}
+
+.newsPost .postList li a .imgBox {
+  overflow: hidden;
+  position: relative;
+  min-width: 488px;
+  height: 300px;
+  top: 40px;
+  right: 0;
+  background-color: #000;
+}
+
+.newsPost .postList li a .imgBox img {
+  height: 300px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.newsPost .postList li a:hover .imgBox img {
+  transform: scale(1.05);
+  overflow: hidden;
+}
+
+.newsPost .postList li a:hover .title {
+  background-size: 100% 2px;
+}
+
+.newsPost .newsContent {
+  position: relative;
+}
+
+.newsPost .newsContent .subTitle {
+  display: inline-block;
+  color: #fff;
+  background-color: #000;
+  width: 60px;
+  height: 20px;
+  line-height: 20px;
+  padding: 2px 12px;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.newsPost .newsContent .title {
+  overflow: hidden;
+  font-size: 28px;
+  font-weight: 500;
+  list-style: 1.5em;
+  word-break: keep-all;
+  line-height: 1.5;
+  background-image: linear-gradient(#000, #000);
+  background-position: left bottom;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition-property: background-size;
+  transition-duration: 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.newsPost .newsContent .title .newIcon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  text-indent: 100%;
+  overflow: hidden;
+  background-size: 20px 20px;
+  background-image: url("../images/contents/news/ico-new.png");
+  background-repeat: no-repeat;
+}
+
+.newsPost .newsContent .date {
+  display: block;
+  color: #aaa;
+  margin-top: 20px;
+  line-height: 1.2em;
+  font-size: 15px;
+}
+
+.newsPost .newsContent .desc {
+  line-height: 2;
+  height: 6em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #333;
+}
+
+.newsPost .newsContent .moreIcon {
+  display: block;
+  width: 40px;
+  height: 15px;
+  background-image: url("../images/contents/news/ico-post-arrow-b.png");
+  background-size: 40px 15px;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  margin-right: 0 20px;
+}
+
+.pagination a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.pagination a span {
+  display: block;
+  position: relative;
+  padding: 5px 5px 7px;
+}
+
+.pagination a.first {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.pagination a.first:before {
+  color: #111;
+  content: "keyboard_double_arrow_left";
+  font-family: "Material Icons";
+  display: inline-block;
+  margin-left: 0;
+}
+
+.pagination a.first:hover {
+  background-color: #aaa;
+}
+
+.pagination a.prev {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.pagination a.prev:before {
+  color: #111;
+  content: "chevron_left";
+  font-family: "Material Icons";
+  display: inline-block;
+  margin-left: 0;
+}
+
+.pagination a.prev:hover {
+  background-color: #aaa;
+}
+
+.pagination a.last {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.pagination a.last:before {
+  color: #111;
+  content: "keyboard_double_arrow_right";
+  font-family: "Material Icons";
+  display: inline-block;
+  margin-left: 0;
+}
+
+.pagination a.last:hover {
+  background-color: #aaa;
+}
+
+.pagination a.next {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.pagination a.next:before {
+  color: #111;
+  content: "chevron_right";
+  font-family: "Material Icons";
+  display: inline-block;
+  margin-left: 0;
+}
+
+.pagination a.next:hover {
+  background-color: #aaa;
+}
+
+.pagination a.active {
+  font-weight: 700;
+  color: #111;
+}
+
+.pagination a.active span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #111;
+  bottom: 0;
+  left: 0;
+}

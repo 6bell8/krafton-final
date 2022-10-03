@@ -1,0 +1,158 @@
+body {
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subContents {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.arrow {
+  width: 40px;
+  filter: brightness(0);
+}
+
+#subVisual01 .titleBox {
+  max-width: 1280px;
+  margin: 150px auto 60px;
+  display: flex;
+  justify-content: space-between;
+}
+#subVisual01 .titleBox .subTitle {
+  font-size: 70px;
+  font-weight: 700;
+}
+#subVisual01 .titleBox .breadCrumbBox {
+  font-size: 13px;
+}
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb {
+  display: flex;
+  align-items: center;
+}
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:last-child {
+  font-weight: 700;
+}
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:not(:last-child):after {
+  transform: translateY(3px);
+  display: inline-block;
+  margin: 0 10px;
+  font-family: "Material Icons";
+  content: "\e409";
+}
+
+#ir {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+#ir .container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+#ir .depthTab {
+  position: relative;
+  margin-bottom: 50px;
+}
+#ir .depthTab .depthTabList {
+  width: 100%;
+  table-layout: fixed;
+}
+#ir .depthTab .depthTabItem {
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+#ir .depthTab .depthTabItem a {
+  width: 100%;
+  padding: 9px 10px;
+  display: table;
+  table-layout: fixed;
+  position: relative;
+  background-color: #f7f7f7;
+}
+#ir .depthTab span {
+  height: 2.4em;
+  display: table-cell;
+  color: #000;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.2em;
+  vertical-align: middle;
+}
+#ir .menu {
+  margin: 30px 0 70px;
+  border-bottom: 1px solid #eee;
+}
+#ir .menu ul {
+  display: flex;
+}
+#ir .menu ul li {
+  position: relative;
+  overflow: hidden;
+  margin-right: 50px;
+  padding: 20px 10px;
+  font-weight: 500;
+}
+#ir .menu ul li:hover:after {
+  transform: scaleX(1);
+}
+#ir .menu ul li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.25s;
+  transform: scaleX(0);
+}
+#ir .menu ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+#ir .view .basicTable {
+  width: 100%;
+  border-top: 1px solid #000;
+}
+#ir .view .basicTable thead th {
+  padding: 24px 10px;
+  color: #222;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.4em;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+#ir .view .basicTable thead :first-child {
+  border-left: none;
+}
+#ir .view .basicTable tbody td {
+  padding: 24px 10px;
+  color: #222;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.6em;
+  vertical-align: middle;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#ir .view .basicTable tbody :first-child {
+  border-left: none;
+}
+#ir .view .basicTable .textCenter {
+  text-align: center;
+}
+#ir .view .basicTable .textLeft {
+  text-align: left;
+}

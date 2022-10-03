@@ -1,0 +1,407 @@
+body {
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subContents {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.subContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.arrow {
+  width: 40px;
+  filter: brightness(0);
+}
+
+#subVisual01 {
+  padding-top: 150px;
+  position: relative;
+}
+
+#subVisual01 .subVideoBox {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 5%;
+}
+
+#subVisual01 .subVideoBox .subVideo {
+  width: 100%;
+}
+
+#subVisual01 .titleBox {
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#subVisual01 .titleBox.titleBoxMg {
+  margin-bottom: 55%;
+}
+
+#subVisual01 .titleBox .subTitle {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+#subVisual01 .titleBox .breadCrumbBox {
+  font-size: 13px;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb {
+  display: flex;
+  align-items: center;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:last-child {
+  font-weight: 700;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:not(:last-child):after {
+  transform: translateY(3px);
+  display: inline-block;
+  margin: 0 10px;
+  font-family: "Material Icons";
+  content: "\e409";
+}
+
+#subVisual01 .tabBox {
+  margin-bottom: 100px;
+}
+
+#subVisual01 .tabBox ul {
+  display: flex;
+}
+
+#subVisual01 .tabBox ul a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  transition: all 0.25s ease;
+  border-right: 1px solid #ccc;
+}
+
+#subVisual01 .tabBox ul a:hover {
+  background-color: #e4e4e4;
+}
+
+#subVisual01 .tabBox ul a li span {
+  font-size: 18px;
+}
+
+#subVisual01 .tabBox ul a:nth-last-child(1) {
+  border-left: none;
+  border-right: none;
+}
+
+#subVisual01 .peopleTitleBox {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+#subVisual01 .peopleTitleBox h3 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.5em;
+  word-break: keep-all;
+}
+
+#subVisual01 .peopleTitleBox span {
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#subVisual01 .people {
+  margin-bottom: 170px;
+}
+
+#subVisual01 .people .kraftonTalent .talentTitle {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 60px;
+}
+
+#subVisual01 .people .kraftonTalent .talentContainer {
+  position: relative;
+}
+
+#subVisual01 .people .kraftonTalent .talentContainer .talentInner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#subVisual01 .people .kraftonTalent .talentContainer .talentInner:nth-child(2n) {
+  align-items: flex-end;
+}
+
+#subVisual01 .people .kraftonTalent .talentContainer .talentInner .talentItem {
+  width: 50%;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  padding-right: 20px;
+  position: relative;
+}
+
+#subVisual01 .people .kraftonTalent .talentContainer .talentInner .talentItem span {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#subVisual01 .people .kraftonTalent .talentContainer .talentInner .talentItem p {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.7em;
+  letter-spacing: 1.2;
+  word-break: keep-all;
+}
+
+#subVisual01 .kraftonPeople {
+  margin-bottom: 170px;
+}
+
+#subVisual01 .kraftonPeople .peopleContainer {
+  position: relative;
+}
+
+#subVisual01 .kraftonPeople .peopleContainer .peopleUl {
+  display: flex;
+  justify-content: space-between;
+}
+
+#subVisual01 .kraftonPeople .peopleContainer .peopleUl .peopleLi {
+  text-align: center;
+  width: 25%;
+}
+
+#subVisual01 .kraftonPeople .peopleContainer .peopleUl .peopleLi a {
+  display: block;
+  border-radius: 100%;
+}
+
+#subVisual01 .kraftonPeople .peopleContainer .peopleUl .peopleLi a .imgBlock {
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 260px;
+  height: 260px;
+  border-radius: 100%;
+  margin-bottom: 40px;
+}
+
+#subVisual01 .kraftonPeople .peopleContainer .peopleUl .peopleLi a:hover img {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+#subVisual01 .kraftonPeople .peopleContainer .peopleUl .peopleLi img {
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+#subVisual01 .kraftonPeople .peopleContainer .peopleUl .peopleLi .job {
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#subVisual01 .kraftonPeople .peopleContainer .peopleUl .peopleLi .peopleInfo {
+  display: block;
+  position: relative;
+  color: #333;
+}
+
+#subVisual01 .kraftonPeople .peopleContainer .peopleUl .peopleLi .peopleInfo .name {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+#subVisual01 .kraftonPeople .peopleContainer .peopleUl .peopleLi .peopleInfo .name:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+}
+
+#subVisual01 .kraftonWork {
+  margin-bottom: 170px;
+}
+
+#subVisual01 .kraftonWork .workContainer {
+  position: relative;
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner .workImg {
+  width: 44%;
+  height: 300px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner .workImg a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner .workImg a img {
+  width: 100%;
+  position: absolute;
+  display: block;
+  top: -20%;
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner .workImg a .youtubeIcon {
+  position: absolute;
+  width: 75px;
+  height: 45px;
+  background-image: url("../images/contents/people/ico-youtube-play.png");
+  background-size: 75px 45px;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  opacity: 0.5;
+  transform: translate(-50%, -50%);
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner .workImg a:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner .workImg a:hover .youtubeIcon {
+  opacity: 1;
+  z-index: 10;
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner:nth-child(2n) .workItem {
+  padding-left: 0;
+  padding-right: 70px;
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner:nth-child(3) .workImg img {
+  top: -5%;
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner .workItem {
+  width: 56%;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  padding-left: 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner .workItem span {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#subVisual01 .kraftonWork .workContainer .workInner .workItem p {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.7em;
+  letter-spacing: 1.2;
+  word-break: keep-all;
+}
+
+#subVisual01 .banner {
+  margin: 200px 0;
+  position: relative;
+}
+
+#subVisual01 .banner .bannerBox {
+  display: block;
+  position: relative;
+  padding: 60px 70px 50px;
+  border: 1px solid #000;
+}
+
+#subVisual01 .banner .bannerBox:hover .bannerTitle {
+  background-size: 100% 2px;
+}
+
+#subVisual01 .banner .bannerBox:hover .moreArrow {
+  transform: translateX(5px);
+}
+
+#subVisual01 .banner .bannerBox .bannerTitle {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2em;
+  width: fit-content;
+  background-image: linear-gradient(#000, #000);
+  background-position: left bottom;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition-property: background-size;
+  transition-duration: 0.3s;
+}
+
+#subVisual01 .banner .bannerBox .bannerDesc {
+  font-size: 18px;
+  margin-top: 18px;
+  line-height: 1.8em;
+}
+
+#subVisual01 .banner .bannerBox .moreBox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#subVisual01 .banner .bannerBox .moreBox span {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+#subVisual01 .banner .bannerBox .moreBox .moreArrow {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 45px;
+}

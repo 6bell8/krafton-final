@@ -1,0 +1,500 @@
+body {
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subContents {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.subContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.arrow {
+  width: 40px;
+  filter: brightness(0);
+}
+
+#subVisual01 {
+  padding-top: 150px;
+}
+
+#subVisual01 .subImgBox {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+}
+
+#subVisual01 .subImgBox.subImgLife {
+  top: 7%;
+}
+
+#subVisual01 .subImgBox .subImg {
+  width: 100%;
+}
+
+#subVisual01 .titleBox {
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#subVisual01 .titleBox.titleBoxMg {
+  margin-bottom: 55%;
+}
+
+#subVisual01 .titleBox .subTitle {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+#subVisual01 .titleBox .breadCrumbBox {
+  font-size: 13px;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb {
+  display: flex;
+  align-items: center;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:last-child {
+  font-weight: 700;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:not(:last-child):after {
+  transform: translateY(3px);
+  display: inline-block;
+  margin: 0 10px;
+  font-family: "Material Icons";
+  content: "\e409";
+}
+
+#subVisual01 .subImgBox .subImg {
+  width: 100%;
+  height: 450px;
+  background-image: url("../images/contents/life/People_Life.png");
+  background-size: cover;
+  margin-bottom: 50px;
+  position: absolute;
+}
+
+#subVisual01 .tabBox {
+  margin-bottom: 100px;
+}
+
+#subVisual01 .tabBox ul {
+  display: flex;
+}
+
+#subVisual01 .tabBox ul a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  transition: all 0.25s ease;
+}
+
+#subVisual01 .tabBox ul a:hover {
+  background-color: #e4e4e4;
+}
+
+#subVisual01 .tabBox ul a li span {
+  font-size: 18px;
+}
+
+#subVisual01 .tabBox ul a:nth-last-child(1) {
+  border-left: 1px solid #ddd;
+}
+
+#subVisual01 .lifeTitleBox {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+#subVisual01 .lifeTitleBox h3 {
+  font-size: 46px;
+  font-weight: 700;
+}
+
+#subVisual01 .lifeTitleBox span {
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#subVisual01 .culture {
+  margin-bottom: 170px;
+}
+
+#subVisual01 .culture .cultureContent {
+  position: relative;
+}
+
+#subVisual01 .culture .cultureContent ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#subVisual01 .culture .cultureContent ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+  height: 640px;
+  margin: 2% 0;
+}
+
+#subVisual01 .culture .cultureContent ul li:nth-child(1) {
+  background-image: url("../images/contents/life/life-culture01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#subVisual01 .culture .cultureContent ul li:nth-child(1):before {
+  display: flex;
+  flex-grow: 1;
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.36);
+  width: 48%;
+  height: 640px;
+}
+
+#subVisual01 .culture .cultureContent ul li:nth-child(2) {
+  background-image: url("../images/contents/life/life-culture02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#subVisual01 .culture .cultureContent ul li:nth-child(2):before {
+  display: flex;
+  flex-grow: 1;
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.36);
+  width: 48%;
+  height: 640px;
+}
+
+#subVisual01 .culture .cultureContent ul li:nth-child(3) {
+  background-image: url("../images/contents/life/life-culture03.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#subVisual01 .culture .cultureContent ul li:nth-child(3):before {
+  display: flex;
+  flex-grow: 1;
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.36);
+  width: 48%;
+  height: 640px;
+}
+
+#subVisual01 .culture .cultureContent ul li:nth-child(4) {
+  background-image: url("../images/contents/life/life-culture04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#subVisual01 .culture .cultureContent ul li:nth-child(4):before {
+  display: flex;
+  flex-grow: 1;
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.36);
+  width: 48%;
+  height: 640px;
+}
+
+#subVisual01 .culture .cultureContent ul li:hover {
+  background-image: none;
+  background-color: #000;
+}
+
+#subVisual01 .culture .cultureContent ul li:hover .desc {
+  display: block;
+}
+
+#subVisual01 .culture .cultureContent ul li .cultureTitle {
+  width: calc(100% - 120px);
+  color: #fff;
+  padding: 45px 60px;
+  z-index: 3;
+}
+
+#subVisual01 .culture .cultureContent ul li .cultureTitle .cultureTitle-main {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#subVisual01 .culture .cultureContent ul li .cultureTitle .cultureTitle-sub {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+#subVisual01 .culture .cultureContent ul li .desc {
+  display: none;
+  width: calc(100% - 120px);
+  color: #fff;
+  padding: 45px 60px;
+  word-break: keep-all;
+  z-index: 3;
+}
+
+#subVisual01 .culture .cultureContent ul li .desc .desc-main {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.6em;
+}
+
+#subVisual01 .culture .cultureContent ul li .desc .desc-sub {
+  margin-top: 20px;
+  line-height: 1.8em;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#subVisual01 .welfare .welfareContainer {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+#subVisual01 .welfare .welfareSlideTab {
+  position: relative;
+  margin-right: 80px;
+  width: 22%;
+  display: flex;
+}
+
+#subVisual01 .welfare .welfareSlideTab ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#subVisual01 .welfare .welfareSlideTab ul li {
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+#subVisual01 .welfare .welfareSlideTab ul li:hover {
+  background: #000;
+  color: #fff;
+}
+
+#subVisual01 .welfare .welfareSlideTab ul li:hover .moreArrow {
+  background-image: url("../images/contents/life/ico-post-arrow.png");
+  transform: translateX(5px);
+}
+
+#subVisual01 .welfare .welfareSlideTab ul li.active {
+  color: #fff;
+  background-color: #000;
+}
+
+#subVisual01 .welfare .welfareSlideTab ul li.active .moreArrow {
+  background-image: url("../images/contents/life/ico-post-arrow.png");
+}
+
+#subVisual01 .welfare .welfareSlideTab ul li:nth-last-child(1) {
+  border-bottom: none;
+}
+
+#subVisual01 .welfare .welfareSlideTab ul li a {
+  display: block;
+  position: relative;
+  padding: 30px 100px 30px 30px;
+}
+
+#subVisual01 .welfare .welfareSlideTab ul li a .welfareTabTitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5em;
+  padding-bottom: 40px;
+}
+
+#subVisual01 .welfare .welfareSlideTab ul li a .moreArrow {
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+}
+
+#subVisual01 .welfare .welfareList {
+  position: relative;
+  flex: 1;
+}
+
+#subVisual01 .welfare .welfareList .welfareListUl .welfareList-item {
+  margin-top: 20px;
+}
+
+#subVisual01 .welfare .welfareList .welfareListUl .welfareList-item h4 {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5em;
+  margin-bottom: 40px;
+}
+
+#subVisual01 .welfare .welfareList .welfareList-content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#subVisual01 .welfare .welfareList .welfareList-content ul li {
+  width: 33%;
+  position: relative;
+}
+
+#subVisual01 .welfare .welfareList .welfareList-content ul li:nth-child(1) .benefitIcon {
+  background-image: url("../images/contents/life/ico-welfare01_1.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+#subVisual01 .welfare .welfareList .welfareList-content ul li:nth-child(2) .benefitIcon {
+  background-image: url("../images/contents/life/ico-welfare01_2.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+#subVisual01 .welfare .welfareList .welfareList-content ul li:nth-child(3) .benefitIcon {
+  background-image: url("../images/contents/life/ico-welfare01_3.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+#subVisual01 .welfare .welfareList .welfareList-content ul li:nth-child(4) .benefitIcon {
+  background-image: url("../images/contents/life/ico-welfare01_4.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+#subVisual01 .welfare .welfareList .welfareList-content ul li:nth-child(5) .benefitIcon {
+  background-image: url("../images/contents/life/ico-welfare01_5.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+#subVisual01 .welfare .welfareList .welfareList-content ul li:nth-child(6) .benefitIcon {
+  background-image: url("../images/contents/life/ico-welfare01_6.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+#subVisual01 .welfare .welfareList .welfareList-content ul li .benefitContent {
+  padding: 50px 20px;
+}
+
+#subVisual01 .welfare .welfareList .welfareList-content ul li .benefitContent .benefitTitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+#subVisual01 .welfare .welfareList .welfareList-content ul li .benefitContent p {
+  margin-top: 18px;
+  font-size: 16px;
+  word-break: keep-all;
+  line-height: 1.6em;
+}
+
+#subVisual01 .banner {
+  margin: 200px 0;
+  position: relative;
+}
+
+#subVisual01 .banner .bannerBox {
+  display: block;
+  position: relative;
+  padding: 60px 70px 50px;
+  border: 1px solid #000;
+}
+
+#subVisual01 .banner .bannerBox:hover .bannerTitle {
+  background-size: 100% 2px;
+}
+
+#subVisual01 .banner .bannerBox:hover .moreArrow {
+  transform: translateX(5px);
+}
+
+#subVisual01 .banner .bannerBox .bannerTitle {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2em;
+  width: fit-content;
+  background-image: linear-gradient(#000, #000);
+  background-position: left bottom;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition-property: background-size;
+  transition-duration: 0.3s;
+}
+
+#subVisual01 .banner .bannerBox .bannerDesc {
+  font-size: 18px;
+  margin-top: 18px;
+  line-height: 1.8em;
+}
+
+#subVisual01 .banner .bannerBox .moreBox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#subVisual01 .banner .bannerBox .moreBox span {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+#subVisual01 .banner .bannerBox .moreBox .moreArrow {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 45px;
+}

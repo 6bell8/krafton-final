@@ -1,0 +1,329 @@
+@import "vars";
+@import "mixin";
+
+body {
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: $font-normal;
+  min-height: 2000px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.subContents {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+.container {
+  margin: 0 3vw;
+}
+
+#subVisual03 {
+  font-family: "Noto Sans KR";
+  color: #fff;
+  background-color: #000;
+  .titleBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1280px;
+    position: relative;
+    margin: 0 15vw;
+    .txtBox {
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      h2 {
+        margin-bottom: 30px;
+
+        font-size: 85px;
+        font-weight: 700;
+        letter-spacing: -3px;
+      }
+      p {
+        margin-bottom: 60px;
+        font-size: 28px;
+        font-weight: 600;
+      }
+      ul {
+        display: flex;
+        li {
+          position: relative;
+          margin: 0 10px;
+          &:nth-child(1) {
+            margin-right: 50px;
+          }
+          &:nth-child(1):after {
+            display: block;
+            width: 1px;
+            height: 15px;
+            left: 100px;
+            content: "";
+            background-color: rgba(255, 255, 255, 0.5);
+            @include absCenter(false, true);
+          }
+        }
+      }
+    }
+    .imgBox {
+      img {
+        width: 50vw;
+        opacity: 0.75;
+      }
+      .linkBox {
+        margin: 40px 120px;
+        font-size: 16px;
+        text-align: right;
+        a {
+          margin: 0 20px;
+          &:after {
+            @include linkIcon;
+          }
+        }
+      }
+    }
+  }
+}
+#games01 {
+  width: 100%;
+  .bigger {
+    height: 1800px;
+    position: relative;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+    height: 100vh;
+    vertical-align: top;
+    top: 0;
+    transform: scale(0.6);
+    transition: all 1.5s;
+    &.scroll01 {
+      position: fixed;
+      transform: scale(1);
+      // @include absCenter(true, false);
+    }
+    &.sticky {
+      position: sticky;
+      // transform: scale(1);
+    }
+  }
+}
+#games02 {
+  margin: 80px 0;
+  .box01 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 280px;
+    padding: 0 100px;
+    .txtBox {
+      width: 50%;
+      position: absolute;
+      left: 50%;
+      @include absCenter(false, true);
+      h3 {
+        margin-bottom: 40px;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 1.2em;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5em;
+      }
+    }
+    .imgBox {
+      width: 65%;
+      height: 600px;
+      background: {
+        position: center;
+        image: url("../images/contents/games/battle-bg3-min.png");
+        repeat: no-repeat;
+        size: 150%;
+      }
+      // &.scroll {
+      //   background-attachment: fixed;
+      // }
+    }
+  }
+  .box02 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin: 0 100px;
+
+    .txtBox {
+      width: 50%;
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      @include absCenter(false, true);
+      h3 {
+        margin-bottom: 40px;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 1.2em;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5em;
+      }
+    }
+    .imgBox {
+      width: 65%;
+      height: 600px;
+      background: {
+        position: center;
+        image: url("../images/contents/games/battle-bg4-min.png");
+        repeat: no-repeat;
+        size: 150%;
+      }
+    }
+  }
+}
+#games03 {
+  .numBox {
+    margin: 150px 0;
+    font-weight: 500;
+    text-align: center;
+    li {
+      margin-bottom: 100px;
+      p {
+        margin-bottom: 20px;
+      }
+      h4 {
+        font-size: 70px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+#games04 {
+  margin: 0 12vw;
+  .moving {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+    .title {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-right: 50px;
+      font-family: "Poppins";
+      font-size: 32px;
+      font-weight: 600;
+    }
+    ul {
+      width: 70%;
+      li {
+        margin-bottom: 50px;
+        h5 {
+          margin-bottom: 20px;
+          font-size: 21px;
+          font-weight: 700;
+        }
+        p,
+        a {
+          font-size: 16px;
+          color: #ccc;
+        }
+        a {
+          display: inline-block;
+          padding: 0.2em 0;
+          @include underline;
+          &:hover:after {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.appBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  a {
+    margin-right: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    &:hover {
+      border: 1px solid rgb(255, 255, 255);
+    }
+  }
+  img {
+    width: 200px;
+    padding: 10px;
+    vertical-align: top;
+  }
+}
+#games05 {
+  margin: 0 12vw;
+  padding-bottom: 100px;
+}
+#pubgStudios {
+  padding: 50px 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+      .txt {
+        .underline:after {
+          transform: translate3d(0, 0, 0);
+          opacity: 1;
+        }
+      }
+    }
+    span {
+      position: relative;
+      margin-right: 30px;
+      font-size: 13px;
+      &:nth-child(1):after {
+        width: 1px;
+        height: 10px;
+        position: absolute;
+        left: 85px;
+        content: "";
+        background-color: #fff;
+        @include absCenter(false, true);
+      }
+    }
+    .txt {
+      .underline {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 0.2em 0;
+        font-size: 40px;
+        font-weight: 500;
+        @include underline;
+      }
+      p {
+        margin: 15px 0;
+        font-size: 16px;
+      }
+      img {
+        width: 30px;
+        margin-top: 50px;
+      }
+    }
+    .pubgLogo {
+      img {
+        width: 100%;
+      }
+      width: 150px;
+      padding: 20px 100px;
+    }
+  }
+}

@@ -1,0 +1,333 @@
+@import "vars02";
+@import "mixin02";
+
+html {
+  //font-size: 10px;
+}
+body {
+  font-family: "poppins", "noto sans kr", sans-serif;
+  font-size: $font-normal;
+  color: $font-color;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.footerContainer {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+#header {
+  .container {
+    width: auto;
+    display: flex;
+  }
+}
+
+#logo {
+  position: absolute;
+  left: 50px;
+  a {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding: 0 40px;
+    img {
+      height: 20px;
+    }
+  }
+}
+
+#gnb {
+  margin: 0 auto;
+  z-index: 99;
+  &:after {
+  }
+  &:hover {
+    &:after {
+      @include pseudo;
+      @include box(100%, 1px, #ccc);
+      left: 0;
+      top: 79px;
+      pointer-events: none;
+    }
+    .inner {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+      border-bottom: 1px solid $bg-color;
+    }
+  }
+  .list {
+    display: flex;
+    background-color: #fff;
+    &:hover {
+      &:after {
+        @include pseudo;
+        @include box(100%, 1px, #ccc);
+        left: 0;
+        top: 79px;
+        pointer-events: none;
+      }
+    }
+
+    > li {
+      .depth01 {
+        display: flex;
+        height: 80px;
+        padding: 0 40px;
+        font-size: $font-medium - 2;
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &:hover {
+          &::before {
+            opacity: 1;
+            visibility: visible;
+            transform: scaleX(1);
+            display: block;
+            // transform: skewX(20deg);
+            transition: all 0.25s ease-in-out;
+          }
+        }
+        &::before {
+          //
+          @include pseudo();
+          top: 75px;
+          left: 10px;
+          right: 1px;
+          bottom: -1;
+          height: 5px;
+          z-index: 2;
+          background-color: #111;
+          // -webkit-transform-origin: left top;
+          // -ms-transform-origin: left top;
+          transform-origin: left top;
+          // -webkit-transform: scale(0, 1);
+          // -ms-transform: scale(0, 1);
+          transform: scale(0, 1);
+          -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+          transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+        }
+      }
+    }
+  }
+  .inner {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+    transition: all 0.15s ease-in-out;
+    .depth02Box {
+      width: 1280px;
+      margin: auto;
+    }
+    .depth02 {
+      display: flex;
+      width: 100%;
+      padding-left: 0px;
+
+      > li {
+        height: 400px;
+        flex-basis: 20%;
+        padding: 0 20px;
+        border-right: 1px solid $bg-color;
+        &:nth-child(1) {
+          border-left: 1px solid $bg-color;
+        }
+        .depth03 {
+          font-size: $font-normal;
+          font-weight: 600;
+          display: block;
+          padding: 30px 0 15px 0;
+        }
+        ul {
+          color: #666;
+          font-size: ($font-normal - 1);
+          li {
+            a {
+              display: block;
+              padding: 8px 0;
+              position: relative;
+              width: fit-content;
+              &:hover {
+                color: #000;
+                &::before {
+                  transform: scaleX(1);
+                }
+              }
+              &::before {
+                @include pseudo();
+                top: 27px;
+                left: 0px;
+                width: 100%;
+                right: 10px;
+                bottom: -1;
+                height: 2px;
+                z-index: 2;
+                background-color: #111;
+                overflow: hidden;
+                -webkit-transform-origin: left top;
+                -ms-transform-origin: left top;
+                transform-origin: left top;
+                -webkit-transform: scale(0, 1);
+                -ms-transform: scale(0, 1);
+                transform: scale(0, 1);
+                -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+                transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.languages {
+  position: absolute;
+  right: 50px;
+  height: 80px;
+  margin-top: 30px;
+  ul {
+    vertical-align: middle;
+    display: flex;
+    color: #999;
+    font-size: ($font-small + 2px);
+    font-weight: 500;
+    li {
+      margin: 3px 5px;
+      border-right: 1px solid #999;
+      text-align: center;
+      &:nth-child(4) {
+        border-right: none;
+      }
+      a {
+        padding-right: 10px;
+        span {
+          color: #111;
+          font-weight: 700;
+          font-size: ($font-small + 2px);
+        }
+      }
+    }
+  }
+}
+
+//
+
+#footer {
+  font-size: ($font-normal - 3);
+  color: #ccc;
+  background-color: #111;
+  margin: 0 auto;
+  .utilMenu {
+    .footerContainer {
+      border-bottom: 1px solid #666;
+      width: 1280px;
+      display: flex;
+      .snsMenu {
+        margin-left: auto;
+        // margin-top: 40px;
+        vertical-align: middle;
+        a {
+          padding: 10px;
+          margin-top: 15px;
+          img {
+            height: 20px;
+          }
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        li {
+          //자식에게 링크를 부여하는 것이 링크 클릭하기 더 수월하다.
+          //슬래쉬 순서를 정할 수 있는 것은 li이다.
+          &:nth-child(1) a::before {
+            display: none;
+          }
+          a {
+            display: block;
+            position: relative;
+            padding: 30px 30px;
+
+            &::before {
+              width: 1px;
+              height: 14px;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              background-color: #666;
+              @include pseudo;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .addressBox {
+    padding: 50px 0;
+    margin: 0 auto;
+    .fLogo {
+      margin-left: 30px;
+      .copyright {
+        font-size: $font-small;
+        margin-top: 10px;
+        p {
+          color: #fff;
+        }
+      }
+      img {
+        height: 20px;
+      }
+    }
+    .footerContainer {
+      display: flex;
+      .address {
+        margin-left: 50px;
+        .info {
+          margin: 10px 0 30px;
+          span {
+            margin-right: 20px;
+          }
+        }
+      }
+      .familySite {
+        display: flex;
+        margin-left: auto;
+        select {
+          // flex-direction: column;
+          font-size: $font-normal;
+          color: #fff;
+          width: 200px; /* 원하는 너비설정 */
+          padding: 0.8em 0.8em; /* 여백으로 높이 설정 */
+          font-family: inherit; /* 폰트 상속 */
+          background-image: url("../images/common/ico-plus.png");
+          background-repeat: no-repeat;
+          background-position: center (right 15px);
+          border-bottom: 2px solid #999;
+          border-radius: 0px; /* iOS 둥근모서리 제거 */
+          outline: none;
+          -webkit-appearance: none; /* 네이티브 외형 감추기 */
+          -moz-appearance: none;
+          background-color: #111;
+          appearance: none;
+          option {
+            color: #fff;
+            font-size: $font-normal;
+            font-family: inherit;
+            background-color: #666;
+            padding: 0.8em 0.8em; /* 여백으로 높이 설정 */
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+<? include("../include/header-k.html"); ?>
+<? include("../include/topBtn.html"); ?>
+<div class="subVisual" id="subVisual01">
+  <div class="subContainer">
+    <div class="titleBox">
+      <h2 class="subTitle">공시정보</h2>
+      <nav id="lnb">
+        <div class="breadCrumbBox">
+          <ul class="breadCrumb">
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/IR.html">IR</a></li>
+            <li><a href="../html/disclosure-information.html">공시정보</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="category">
+      <div class="categorySearch">
+        <div class="searchBox">
+          <a href="javascript:onSearch();" class="searchLink">ALL</a>
+          <ul id="searchDisplay">
+            <li><a href="">ALL</a></li>
+            <li><a href="">DATE</a></li>
+            <li><a href="">TITLE</a></li>
+            <li><a href="">WRITER</a></li>
+          </ul>
+        </div>
+        <div class="searchInput">
+          <div class="searchItem">
+            <input type="text" placeholder="Search" />
+          </div>
+          <a href=""><img src="../images/common/ico-search.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="disclosureLink">
+      <a href="">
+        <span>공시차트</span>
+      </a>
+    </div>
+    <div class="disclosureContents">
+      <table class="boardTable">
+        <colgroup>
+          <col style="width: 10%" />
+          <col style="width: 15%" />
+          <col />
+          <col style="width: 15%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="column">번호</th>
+            <th scope="column">시간</th>
+            <th scope="column">공시제목</th>
+            <th scope="column">제출의무자</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>82</td>
+            <td>2022.06.09</td>
+            <td class="subject">주식등의대량보유상황보고서(약식)</td>
+            <td>국민연금공단</td>
+          </tr>
+          <tr>
+            <td>81</td>
+            <td>2022.06.03</td>
+            <td class="subject">기업설명회(IR) 개최(안내공시)</td>
+            <td>크래프톤</td>
+          </tr>
+          <tr>
+            <td>80</td>
+            <td>2022.05.31</td>
+            <td class="subject">기업지배구조 보고서 공시</td>
+            <td>크래프톤</td>
+          </tr>
+          <tr>
+            <td>79</td>
+            <td>2022.05.16</td>
+            <td class="subject">분기보고서(일반법인)</td>
+            <td>크래프톤</td>
+          </tr>
+          <tr>
+            <td>78</td>
+            <td>2022.05.12</td>
+            <td class="subject">특수관계인에대한출자</td>
+            <td>크래프톤</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="moreButton">
+      <a href="">
+        <span>More</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function onSearch() {
+    const con = document.getElementById("searchDisplay");
+    if (con.style.display == "none") {
+      con.style.display = "block";
+    } else {
+      con.style.display = "none";
+    }
+  }
+</script>
+
+<? include("../include/footer.html"); ?>

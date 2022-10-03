@@ -1,0 +1,146 @@
+body {
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  min-height: 2000px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subContents {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.container {
+  margin: 0 150px;
+}
+
+.arrow {
+  width: 40px;
+  filter: brightness(0);
+}
+
+#subVisual01 .titleBox {
+  max-width: 1280px;
+  margin: 150px auto 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#subVisual01 .titleBox .subTitle {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+#subVisual01 .titleBox .breadCrumbBox {
+  font-size: 13px;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb {
+  display: flex;
+  align-items: center;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:last-child {
+  font-weight: 700;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:not(:last-child):after {
+  transform: translateY(3px);
+  display: inline-block;
+  margin: 0 10px;
+  font-family: "Material Icons";
+  content: "\e409";
+}
+
+#subVisual01 #historySection {
+  position: relative;
+}
+
+#subVisual01 #historySection .swiper-container {
+  overflow: hidden;
+}
+
+#subVisual01 #historySection .slideArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#subVisual01 #historySection .slideArrow .prev {
+  width: 50px;
+  height: 18px;
+  background: none;
+  background-image: url("../images/main/ico-history-prev.png");
+  background-size: 50px 18px;
+  display: block;
+  margin-right: 20px;
+  z-index: 3;
+}
+
+#subVisual01 #historySection .slideArrow .next {
+  width: 50px;
+  height: 18px;
+  background: none;
+  background-image: url("../images/main/ico-history-next.png");
+  background-size: 50px 18px;
+  display: block;
+  margin-right: 20px;
+  z-index: 3;
+}
+
+#subVisual01 #historySection .swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#subVisual01 #historySection .swiper-wrapper li {
+  margin-right: 30px;
+}
+
+#subVisual01 #historySection .swiper-wrapper li:hover a .gameThumbnail img {
+  transform: scale(1.1);
+}
+
+#subVisual01 #historySection .swiper-wrapper li a {
+  display: block;
+  position: relative;
+}
+
+#subVisual01 #historySection .swiper-wrapper li a .gameThumbnail {
+  overflow: hidden;
+  position: relative;
+}
+
+#subVisual01 #historySection .swiper-wrapper li a .gameThumbnail:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#subVisual01 #historySection .swiper-wrapper li a .gameThumbnail img {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+#subVisual01 .subImg {
+  width: 100%;
+  height: 450px;
+  background-image: url("../images/contents/story/history.png");
+  background-size: cover;
+}

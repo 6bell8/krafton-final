@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KRAFTON</title>
+
+    <link rel="shortcut icon" href="../images/common/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/faq.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/topBtn.css" />
+    <script src="../js/aos.js"></script>
+  </head>
+  <body>
+    <? include("../include/header-m.html"); ?>
+    <? include("../include/topBtn.html"); ?>
+    <div class="subVisual" id="subVisual04">
+      <div class="titleBox">
+        <h2 class="subTitle">자주 묻는 질문</h2>
+        <nav id="lnb">
+          <div class="breadCrumbBox">
+            <ul class="breadCrumb">
+              <li><a href="../html/index.html">Home</a></li>
+              <li><a href="../html/people.html">Careers</a></li>
+              <li><a href="../html/faq.html">자주 묻는 질문</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="subContents">
+      <div class="contents" id="faq">
+        <div class="container">
+          <div class="menu">
+            <ul>
+              <li><a href="">전체</a></li>
+              <li><a href="">지원자격</a></li>
+              <li><a href="">지원서 작성</a></li>
+              <li><a href="">채용절차</a></li>
+              <li><a href="">병역특례</a></li>
+            </ul>
+          </div>
+          <div class="searchForm">
+            <div class="category">
+              <div>전체</div>
+              <ul class="categoryList">
+                <li><a href="">전체</a></li>
+                <li><a href="">제목</a></li>
+                <li><a href="">내용</a></li>
+                <li><a href="">제목+내용</a></li>
+              </ul>
+            </div>
+            <div class="searchBox"><input type="text" placeholder="Search" /></div>
+          </div>
+          <div class="faqList">
+            <ul>
+              <li><span>[병역특례] 병역특례는 언제, 어떻게 지원할 수 있나요?</span></li>
+              <li><span>[병역특례] 병역특례 지정업체인가요?</span></li>
+              <li><span>[지원서 작성] 입사지원서를 수정/삭제하고 싶습니다.</span></li>
+              <li><span>[지원서 작성] 이력서, 자기소개서의 정해진 양식이 따로 있나요?</span></li>
+              <li><span>[지원자격] 졸업예정자도 지원 가능한가요?</span></li>
+              <li><span>[지원자격] 공고는 언제 마감되나요?</span></li>
+              <li><span>[채용절차] 채용 절차는 어떻게 진행되나요?</span></li>
+              <li><span>[채용절차] 서류심사 결과 발표는 언제 하나요?</span></li>
+              <li><span>[채용절차] 입사지원서에 기입한 정보가 잘못되었음을 알았습니다. 인터뷰 전에 수정이 가능할까요?</span></li>
+              <li><span>[지원서 작성] 포트폴리오는 어떤 것을 준비하면 되나요?</span></li>
+            </ul>
+          </div>
+          <div class="pagination">
+            <div class="icon">
+              <a href="" class="first"></a>
+              <a href="" class="prev"></a>
+            </div>
+            <ul>
+              <li><a href="" class="active">1</a></li>
+              <li><a href="">2</a></li>
+            </ul>
+            <div class="icon">
+              <a href="" class="next"></a>
+              <a href="" class="last"></a>
+            </div>
+          </div>
+          <div class="inquiry">
+            <dl>
+              <dt>1:1 채용문의</dt>
+              <dd>career@krafton.com</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    <? include("../include/footer-m2.html"); ?>
+  </body>
+  <script>
+    const category = document.querySelector(".category");
+    category.addEventListener("click", function () {
+      category.classList.toggle("open");
+    });
+  </script>
+</html>

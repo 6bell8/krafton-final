@@ -1,0 +1,255 @@
+body {
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subContents {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.subContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.arrow {
+  width: 40px;
+  filter: brightness(0);
+}
+
+#subVisual01 {
+  padding-top: 150px;
+}
+
+#subVisual01 .titleBox {
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#subVisual01 .titleBox .subTitle {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+#subVisual01 .titleBox .breadCrumbBox {
+  font-size: 13px;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb {
+  display: flex;
+  align-items: center;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:last-child {
+  font-weight: 700;
+}
+
+#subVisual01 .titleBox .breadCrumbBox .breadCrumb li:not(:last-child):after {
+  transform: translateY(3px);
+  display: inline-block;
+  margin: 0 10px;
+  font-family: "Material Icons";
+  content: "\e409";
+}
+
+.category {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.categorySearch {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.categorySearch .searchBox {
+  position: relative;
+  width: 200px;
+}
+
+.categorySearch .searchBox .searchLink {
+  line-height: 25px;
+  display: block;
+  width: 150px;
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  padding: 10px 30px 10px 10px;
+}
+
+.categorySearch .searchBox .searchLink:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-image: url("../images/common/ico-select-arrow_b.png");
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.categorySearch .searchBox ul {
+  display: none;
+  border: 2px solid #000;
+  background-color: #fff;
+  width: 150px;
+  padding: 10px 30px 10px 0;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  max-height: 150px;
+  z-index: 5;
+  box-sizing: border-box;
+  top: calc(100% + 10px);
+}
+
+.categorySearch .searchBox ul li {
+  padding: 10px;
+}
+
+.categorySearch .searchInput {
+  position: relative;
+}
+
+.categorySearch .searchInput .searchItem {
+  display: flex;
+}
+
+.categorySearch .searchInput .searchItem input {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  width: 200px;
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+  border: 3px solid #000;
+  padding: 10px 30px 10px 10px;
+}
+
+.categorySearch .searchInput img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.disclosureContents {
+  width: 100%;
+  border-top: 2px solid #000;
+}
+
+.disclosureContents tbody th,
+.disclosureContents tbody td,
+.disclosureContents thead th,
+.disclosureContents thead td {
+  padding: 15px 10px;
+  border-bottom: 1px solid #999;
+}
+
+.disclosureContents tbody th:nth-child(1),
+.disclosureContents tbody td:nth-child(1),
+.disclosureContents thead th:nth-child(1),
+.disclosureContents thead td:nth-child(1) {
+  border-left: none;
+}
+
+.disclosureLink {
+  display: block;
+  position: relative;
+  margin: 40px 0 20px;
+}
+
+.disclosureLink a:hover span {
+  background-size: 73% 2px;
+}
+
+.disclosureLink span {
+  font-size: 20px;
+  font-weight: 500;
+  background-image: linear-gradient(#000, #000);
+  background-position: left bottom;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition-property: background-size;
+  transition-duration: 0.3s;
+}
+
+.disclosureLink span:after {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: "Material Icons";
+  content: "\e89e";
+}
+
+.boardTable {
+  width: 100%;
+  border-top: 2px solid #000;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.boardTable tbody th,
+.boardTable tbody td,
+.boardTable thead th,
+.boardTable thead td {
+  padding: 22px 10px;
+  border-bottom: 1px solid #999;
+  text-align: center;
+}
+
+.boardTable thead {
+  font-weight: 500;
+}
+
+.boardTable .subject {
+  text-align: left;
+}
+
+#moreButton {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#moreButton a {
+  position: relative;
+}
+
+#moreButton a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  width: 200px;
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+#moreButton a:hover span {
+  background-color: #fff;
+  color: #000;
+  border: 3px solid #000;
+}

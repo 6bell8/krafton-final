@@ -1,0 +1,402 @@
+@charset "UTF-8";
+body {
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  min-height: 1800px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subContents {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 1024px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.arrow {
+  width: 40px;
+  filter: brightness(0);
+}
+
+#subVisual04 .titleBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 150px auto 60px;
+  max-width: 1280px;
+}
+
+#subVisual04 .titleBox .subTitle {
+  font-family: sans-serif;
+  font-size: 65px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  word-spacing: -5px;
+}
+
+#subVisual04 .titleBox .breadCrumbBox {
+  font-size: 13px;
+}
+
+#subVisual04 .titleBox .breadCrumbBox .breadCrumb {
+  display: flex;
+  align-items: center;
+}
+
+#subVisual04 .titleBox .breadCrumbBox .breadCrumb li:last-child {
+  font-weight: 700;
+}
+
+#subVisual04 .titleBox .breadCrumbBox .breadCrumb li:not(:last-child):after {
+  transform: translateY(3px);
+  display: inline-block;
+  margin: 0 10px;
+  font-family: "Material Icons";
+  content: "\e409";
+}
+
+#jobs .recruitBox {
+  width: 100%;
+  display: flex;
+}
+
+#jobs .recruitBox .recruitSearch {
+  position: relative;
+  width: 300px;
+  height: 25%;
+  left: 0;
+  top: 0px;
+  padding-top: 60px;
+  background-color: #fff;
+  margin-right: 50px;
+  color: #111;
+  left: 0%;
+  transition: all 0.25s ease;
+}
+
+#jobs .recruitBox .recruitSearch .recruitTitle {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-left: 10px;
+  position: relative;
+}
+
+#jobs .recruitBox .recruitSearch .recruitTitle a {
+  position: absolute;
+  justify-content: right;
+  box-sizing: border-box;
+  font-size: 18px;
+  left: 220px;
+  bottom: 5px;
+}
+
+#jobs .recruitBox .recruitSearch .recruitTitle a:hover {
+  transform: scale(1.2);
+  transition: all 0.25s ease-in-out;
+}
+
+#jobs .recruitBox .recruitSearch .recruitTitle a:after {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-left: 10px;
+  background-image: url("../images/common/autorenew.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  top: -5px;
+  content: "";
+}
+
+#jobs .recruitBox .recruitSearch .recruitItem .list > li {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+#jobs .recruitBox .recruitSearch .recruitItem .list > li .depth01 {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  position: relative;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+#jobs .recruitBox .recruitSearch .recruitItem .list > li .depth02 {
+  background-color: fff;
+  padding: 10px 0;
+  display: none;
+}
+
+#jobs .recruitBox .recruitSearch .recruitItem .list > li .depth02 li a {
+  display: flex;
+  padding: 10px 0 10px 10px;
+  font-size: 20px;
+  align-items: center;
+}
+
+#jobs .recruitBox .recruitSearch .recruitItem .list > li .depth02 li a input {
+  width: 20px;
+  height: 20px;
+}
+
+#jobs .recruitBox .recruitSearch .recruitItem .list > li .depth02 li a span {
+  padding: 0 20px;
+}
+
+#jobs .recruitBox .recruitPost {
+  width: 1280px;
+  width: auto;
+  padding: 50px 0;
+}
+
+#jobs .recruitBox .recruitPost .headerTitle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  height: 30px;
+}
+
+#jobs .recruitBox .recruitPost .headerTitle span {
+  margin-left: 380px;
+}
+
+#jobs .recruitBox .recruitPost .postInners {
+  margin-top: 20px;
+}
+
+#jobs .recruitBox .recruitPost .postInners .postInner {
+  margin-top: 60px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #999;
+  position: relative;
+}
+
+#jobs .recruitBox .recruitPost .postInners .postInner li .InnerItem01 {
+  word-break: keep-all;
+  width: 90%;
+  font-size: 28px;
+  margin: 10px 0;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+#jobs .recruitBox .recruitPost .postInners .postInner li .InnerItem01 a img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 40px;
+}
+
+#jobs .recruitBox .recruitPost .postInners .postInner li .InnerItem01 a img:hover {
+  transform: scale(1.2);
+  transition: all 0.25s ease-in-out;
+}
+
+#jobs .recruitBox .recruitPost .postInners .postInner li .InnerItem02 {
+  font-size: 18px;
+  margin: 25px 0;
+}
+
+#jobs .recruitBox .recruitPost .postInners .postInner li .InnerItem02 span {
+  background-color: #6565c5;
+  padding: 5px;
+  color: #fff;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+#jobs .recruitBox .recruitPost .postInners .postInner li .InnerItem02 #colorSpan {
+  background-color: #111;
+  padding: 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+#jobs .recruitBox .recruitPost .postInners .postInner li .InnerItem02 #colorSpan02 {
+  background-color: #56cc3e;
+  padding: 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+#jobs .searchForm {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+#jobs .searchForm .category {
+  width: 150px;
+  position: relative;
+  margin-right: 15px;
+  padding: 14.5px 18px;
+  font-size: 16px;
+  border: 2px solid #000;
+}
+
+#jobs .searchForm .category option {
+  color: #111;
+  font-size: 16px;
+  font-family: inherit;
+  border: 5px solid #000;
+  padding: 0.8em 0.8em;
+  /* 여백으로 높이 설정 */
+}
+
+#jobs .searchForm .category:after {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 20px;
+  margin-left: 10px;
+  background-image: url("../images/common/ico-select-arrow_b.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  padding-right: 15px;
+  content: "";
+}
+
+#jobs .searchForm .searchBox {
+  width: 250px;
+  position: relative;
+  padding: 12px 18px;
+  border: 2px solid #000;
+  color: #777;
+}
+
+#jobs .searchForm .searchBox:after {
+  display: inline-block;
+  width: 15px;
+  height: 22px;
+  position: absolute;
+  right: 20px;
+  margin-left: 10px;
+  background-image: url("../images/common/ico-search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-right: 15px;
+  content: "";
+}
+
+#jobs .searchForm .searchBox input {
+  border: none;
+  outline: none;
+}
+
+#jobs .searchForm .searchBox input[type="text"] {
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#jobs .searchForm .searchBox input[type="text"]:after {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 20px;
+  margin-left: 10px;
+  background-image: url("../images/common/ico-search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  padding-right: 15px;
+  content: "";
+}
+
+.pagination {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  margin: 75px 0;
+}
+
+.pagination .icon {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination .icon a {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+.pagination .icon a.first:before {
+  font-family: "Material Icons";
+  content: "keyboard_double_arrow_left";
+  display: inline-block;
+  margin-left: 0;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.pagination .icon a.prev:before {
+  font-family: "Material Icons";
+  content: "chevron_left";
+  display: inline-block;
+  margin-left: 0;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.pagination .icon a.next:before {
+  font-family: "Material Icons";
+  content: "chevron_right";
+  display: inline-block;
+  margin-left: 0;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.pagination .icon a.last:before {
+  font-family: "Material Icons";
+  content: "keyboard_double_arrow_right";
+  display: inline-block;
+  margin-left: 0;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  font-family: "Noto sans kr";
+  font-size: 16px;
+  margin: 0 50px;
+}
+
+.pagination ul a {
+  width: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  color: #777;
+}
+
+.pagination ul a.active {
+  border-bottom: 2px solid #000;
+  font-weight: 600;
+  color: #000;
+}
